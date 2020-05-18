@@ -1,0 +1,655 @@
+#header { display: none; }
+.header-divide { margin-top: 0px; }
+.footersection .copyrights, .footersection .footerlinks, .footersection .footertext { display: none; }
+
+.sign-out-button {
+    display: block !important;
+}
+
+#main_menu .nav-pills {
+	margin-bottom: 10px;
+}
+
+
+#main_menu{
+	margin-top: 10px;
+}
+
+/* USER ZONE user crm */
+#userZone  {
+	border-top: 2px solid #E5E5E5;
+	margin-bottom: 15px; 
+}
+#userZone table tbody tr td.t-label {
+	text-align: right; padding-right: 5px;
+	color: #656668;
+	white-space: nowrap;
+	vertical-align: top;
+}
+#userZone table tbody tr td.t-data {
+	font-weight: bold;
+	vertical-align: top;
+}
+div.userCrmReturn { padding-bottom: 2px; }
+div.userCrmReturn a { text-decoration: none; }
+
+#permissionList div.t-checklist-row { float: left; width: 45%; padding-right: 10px; }
+
+table.usercrminfo { margin-top: 5px; }
+table.usercrminfo td.info-label { background-color: #f7f7f7; color: #656668; vertical-align: top; padding: 4px 5px 0px 5px; font-size: 0.9em; }
+table.usercrminfo td.info-data { font-weight: bold; vertical-align: top; border-top: 0px; padding: 0px 5px 4px 5px; }
+td.alt-lang-fields {
+	text-align: inherit;
+	direction: rtl; 
+}
+table.usercrminfo td.info-label.alt-lang-fields { font-size: 16px; }
+
+table.acct { margin-top: 8px; }
+table.acct.table-bordered { border: 1px solid #0044cc; }
+table.acct.table-bordered.appinfo, ul.appinfo { border: 1px solid #f89406; }
+
+table.nigoinfo { border: 1px solid #b94a48; }
+table.complianceinfo { border: 1px solid #c09853; }
+
+.orgCrmReturn { padding-top: 5px; padding-right: 5px; }
+
+.compliance { border: 1px solid #6581a2; padding: 5px; }
+.compliance .alert { margin-bottom: 5px; }
+.compliance .table tr.t-first td { border-top: 0px; }
+
+.nigo, .compliance { border: 1px solid #6581a2; padding: 5px; }
+.nigo .alert, .compliance .alert { margin-bottom: 5px; }
+.nigo .table, .compliance .table { margin-bottom: 0px; }
+.nigo .table tr.t-first td, .compliance .table tr.t-first td { border-top: 0px; }
+.nigo .table td, .compliance .table td { font-size: 90%; line-height: 1; height: 1; }
+
+.tier-normal { background-color:inherit; }
+.tier-silver { background-color:#c9c8c7; }
+.tier-gold { background-color:#e2bf33; }
+
+div.t-data-grid tr.even {
+	background-color: #f2f2f2;
+}
+
+#taxCountries tr{
+ vertical-align: top;
+}
+
+.officeAddressSection, .homeCountryAddressSection, .homeCountryPhoneSection, .occupationSection {
+    display: block;
+}
+
+.countArea {
+	text-align: center;
+	font-size: 1.1em;
+	margin-bottom: 15px;
+}
+.match-control {
+  position: absolute;
+  top: 15px;
+  width: 40px;
+  height: 40px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #222;
+  border: 1px solid #222;
+  -webkit-border-radius: 23px;
+  -moz-border-radius: 23px;
+  border-radius: 23px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.match-control.left {
+	right: 1px;
+}
+.match-control.right {
+	left: 1px;
+}
+.match-control:hover,
+.match-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.pRelative {
+	position: relative;
+}
+.matchSliderContent {
+	padding: 5px 15px;
+}
+.matchSliderIndex {
+	text-align: right;
+	font-style: italic;
+}
+.matchSliderTab {
+	table-layout: fixed;
+	width: 50%;
+	margin-top: 5px;
+}
+.matchSliderTab td {
+	padding: 1px 5px;
+}
+.matchSliderTab td:nth-child(odd) {
+	text-align: right;
+}
+.matchSliderTab td:nth-child(even) {
+	font-weight: bold;
+	text-align: left;
+}
+.matchTab {
+	margin-bottom: 0px;
+}
+.matchTab th {
+	background-color: transparent;
+}
+.matchSearchDiv {
+	margin: 10px 0;
+}
+.matchSearchDiv:last-child {
+	margin-bottom: 0;
+}
+
+
+.matchResultTab {
+	table-layout: fixed;
+	width: 100%;
+}
+.matchResultTab td {
+	padding: 0;
+}
+.matchResultTab td:nth-child(odd) {
+	width: 65px;
+}
+.matchResultTab td:nth-child(even) {
+	font-weight: bold;
+	text-align: left;
+	width: auto;
+}
+
+.matchSubTitle {
+	font-size: 16px;
+	padding: 10px 0;
+}
+.control-label {
+	font-weight: bold;
+}
+.addOnInput {
+	width: 115px;
+}
+
+
+
+.trueUp-table td {
+	text-align: right;
+}
+.trueUp-table td.actions, .trueUp-table td.actions2 {
+	text-align: left;
+}
+
+.trueUp-table td.id,
+.trueUp-table td.receivedAt,
+.trueUp-table td.referenceData,
+.trueUp-table td.amount,
+.trueUp-table td.childAmount,
+.trueUp-table td.bankCharge,
+.trueUp-table td.childAllocated,
+.trueUp-table td.netOfCommission,
+.trueUp-table td.childNetAmount,
+.trueUp-table td.childRef {
+	font-weight: bold;
+}
+.trueUp-table td.id,
+.trueUp-table td.receivedAt,
+.trueUp-table td.referenceData,
+.trueUp-table td.childAllocated,
+.trueUp-table td.netOfCommission,
+.trueUp-table td.childRef{
+	text-align: left;
+}
+
+.trueUp-table tr:nth-child() {
+	background-color: #EFEFEF;
+}
+
+
+/** True Up CC, edit, view **/
+
+.ccEditTab tr.rowStriped {
+	background-color: #F9F9F9;
+}
+
+.ccEditTab tr.rowStriped td {
+	text-align: right;
+}
+.ccEditTab td.actions, .ccEditTab th.actions {
+	text-align: right;
+}
+.bold {
+	font-weight: bold;
+}
+.form-horizontal .control-label {
+	width: 140px;
+	line-height: 1.2em;
+}
+.form-horizontal .controls {
+	margin-left: 150px;
+}
+.txtFormH .control-group {
+    margin-bottom: 0px;
+}
+.smallLabel .control-label {
+    width: 100px;
+}
+.smallLabel .controls {
+    margin-left: 110px;
+}
+
+
+.controlArea {
+	padding-left: 40px;
+}
+.controlTextArea {
+	width: 200px;
+	height: 80px;
+}
+.actionLinker {
+	margin-top: 10px;
+	padding: 0;
+	border-bottom: 1px solid #CCC;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0;
+}
+
+.notesTile {
+	font-size: 1.1em;
+	font-weight: bold;
+	margin-top: 10px;
+}
+.notesLink {
+	font-size: 0.9em;
+	font-style: italic;
+}
+.notesDivLink {
+	text-align: right;
+	margin: -5px 2px -2px 0;
+}
+
+.breakdownTab {
+	width: 100%;
+	table-layout: fixed;
+}
+.breakdownTab td {
+	padding: 4px;
+	border-bottom: 1px solid #ccc;
+	vertical-align: top;
+}
+.breakdownTab .premRow1 td {
+    border-bottom: 0px;
+}
+.breakdownTab td > label, .breakdownTab td > div > label {
+	font-size: 0.8em;
+	padding-bottom: 0px; margin-bottom: 0px;
+}
+input.breakdownInput {
+	width: 80%;
+	height: 9pt;
+	font-size: 10px;
+}
+select.breakdownInput {
+	width: 95%;
+	height: 18pt;
+	font-size: 10px;
+}
+.formActionButtons {
+	text-align: left;
+	padding-left: 20px;
+}
+.viewControls {
+	font-weight: bold;
+	padding-top: 2px;
+}
+
+.tableFixed {
+	table-layout: fixed;
+	width: 100%;
+}
+.bold {
+	font-weight: bold;
+}
+.qMedicalRisk {
+	padding: 4px 0 7px 0;
+}
+.uw-modalButtons {
+	margin-top: 15px;
+	text-align: center;
+}
+.uw-modalRadio {
+	margin: 10px 0;
+}
+.uw-inline {
+	display: inline;
+}
+.uw-popover {
+	float: left;
+	margin-right: 10px;
+}
+.ui-dialog label.uw-popover { width: auto; }
+.uw-riskClass {
+	padding: 5px 0 10px 0;
+}
+.uw-editAnchor {
+	padding-left: 6px; 
+}
+.uw-editAnchor > i {
+	font-size: 0.9em;
+}
+.uw-tabInput {
+	margin-bottom: 0 !important;
+	padding: 3px !important;
+}
+.uw-riderTitle {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.uw-riderTitle.inactive {
+	font-weight: normal;
+	color: #b7b7b7;
+}
+.bigPadding {
+	padding: 5px !important;
+}
+.uw-emailCompose .control-label {
+	width: 100px;
+}
+.uw-emailCompose .controls {
+	margin-left: 110px;
+}
+.uw-well {
+	padding: 10px 15px; 
+	margin-top: -11px; 
+	border-radius: 0;
+	background-color: white;
+}
+.uw-tabInfoView {
+	table-layout: fixed;
+	width: 97%;
+}
+.uw-alert {
+	margin-top: 4px;
+	padding: 5px 0;
+}
+.alertTxt {
+	padding: 0 8px;
+}
+
+
+.t-data-grid .nav-table th.unitHolderName {
+    width: 25%;
+}
+
+.t-data-grid .nav-table th.status {
+    width: 8em;
+}
+
+.t-data-grid .nav-table th.pricingModel {
+    width: 10em;
+}
+
+.t-data-grid .nav-table th.number {
+    width: 12em;
+}
+
+.t-data-grid .nav-table th.name {
+    width: 45%;
+}
+
+.t-data-grid .nav-table th.actions {
+    width: 12em;
+}
+
+
+.tabHeaderButton {
+    text-align: right;
+    padding: 5px 0;
+}
+.tabTitleButton {
+    padding: 5px 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.territory_bc {
+    margin-bottom: 10px;
+}
+.additionalActionButton {
+    margin-top: 25px;
+}
+.tabsSearch {
+    margin-top: 5px;
+}
+
+.territoryUsersTab th.main, .territoryUsersTab tr#usersHeader th:first-child {
+    width: 80px;
+}
+
+
+/** Widgets Admin **/
+.widgetsAccordion .accordion-group {
+    border-color: #888;
+    margin-bottom: 4px;
+}
+
+.widgetsAccordion .accordion-heading {
+    background-color: #EFEFEF;
+    border-radius: 4px;
+}
+
+.widgetsAccordion .accordion-heading a {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.widgetsAccordion .accordion-heading a:hover, .widgetsAccordion .accordion-heading a:focus {
+    text-decoration: initial;
+}
+
+.widgetsAccordion .accordion-inner {
+    border-top: 0;
+}
+
+.widgetsAccordion .usersLink {
+    text-align: right;
+    margin: 5px 14px 10px 0;
+}
+.widgetsAccordion .usersLink i.fa {
+    font-size: 1.3em;
+}
+
+.widgetsAccordion .widgetsWell {
+    border: 1px dashed #CCC;
+    padding: 15px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: none;
+}
+.widgetsAccordion .in .widgetsWell {
+    display: block;
+}
+.widgetsAccordion .widgetsWellTxt {
+    color: #888;
+    opacity: 0.7;
+    font-size: 1.1em;
+    text-align: center;
+}
+.widgetsAccordion .selectedWell {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+}
+
+
+
+.widgetsList .widgetTag {
+    margin-bottom: 5px;
+}
+.widgetsList .widgetBadge {
+    padding: 4px 9px;
+    font-size: 1em;
+    cursor: move;
+    font-weight: normal;
+}
+
+.widgetsList .widgetInfo i.fa {
+    color: white;
+    opacity: 0.8;
+}
+
+.widgetsList .inlineTag {
+
+}
+.widgetsList .inlineTag .widgetBadge {
+    margin-bottom: 0px;
+    cursor: default;
+}
+
+
+
+#widgetalertbox div.imsalerts div.t-alert-controls { display: none; }
+
+#widgetalertbox { position: relative; }
+
+#widgetalertbox div.imsalerts { z-index: 99; width: 500px; position: absolute; top: 1px; right: 1px; }
+
+#widgetalertbox .imsalerts div.t-alert-container div.t-info {
+    background: #ffffe6 no-repeat;
+    border: 1px solid #464749;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin-bottom: 5px;
+    padding-left: 22px;
+    color: #464749;
+}
+.rolesDiv {
+    width: 80%;
+}
+
+
+/** Beneficiary and relationships **/
+
+.benListForm {
+
+}
+.benListForm div.control-group {
+    margin-bottom: 4px;
+}
+.benListForm label.control-label {
+    width: 95px;
+    line-height: 1.2em;
+    padding-top: 1px;
+}
+.benListForm div.controls {
+    margin-left: 100px;
+    line-height: 1.2em;
+    padding-top: 1px;
+}
+.formSubTitle {
+    font-size: 1.1em;
+}
+
+div.row .noLeftM {
+    margin-left: 10px !important;
+}
+
+/** Client view **/
+.clientViewForm {
+    margin-bottom: 0;
+}
+.clientViewForm div.control-group {
+    margin-bottom: 5px;
+}
+.clientViewForm label.control-label {
+    width: 150px;
+    line-height: 1.2em;
+    padding-top: 1px;
+}
+.clientViewForm div.controls {
+    margin-left: 160px;
+    line-height: 1.2em;
+    padding-top: 1px;
+}
+.sm-well {
+    padding: 10px 10px 6px 10px;
+    margin-bottom: 10px;
+}
+
+input.input-navbar {
+    width: 80px;
+    margin-bottom: 0;
+}
+li.li-label-navbar {
+    padding: 10px 5px 0 0;
+}
+li.li-input-navbar {
+    padding: 5px 0 0 0;
+}
+li.li-btn-navbar {
+    padding: 1px 5px 0 5px;
+    margin-right: 0;
+}
+.invoicesAcctType {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 3px;
+}
+
+.well_R {
+    padding: 8px 10px 10px 10px;
+}
+.well_R_actions {
+    text-align: right;
+}
+.well_R_btn {
+    margin-left: 5px;
+}
+
+.well_R_title {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.well_R_tab {
+    table-layout: fixed;
+    width: 100%;
+    font-size: 0.9em;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+}
+
+.well_R_tab th {
+    text-align: left;
+    padding: 3px;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    background-color: #EFEFEF;
+}
+
+.well_R_tab td {
+    text-align: left;
+    padding: 2px 3px;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
+
+.invoiceTab_selectAll label {
+    text-align: right;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.invoiceTab_selectAll input {
+    margin-bottom: 5px;
+}

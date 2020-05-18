@@ -1,0 +1,64 @@
+div.hsection {
+    position: relative;
+}
+.print-button {
+		font-weight: normal;
+		margin-bottom: 5px;
+		position: absolute;
+		right: 0;
+		bottom: 3px;
+}
+/****** PRINT STYLES FOR PERFORMANCE CHARTS ******/
+@media print {
+    #header-box,
+    #main_menu,
+    #tabs,
+    #fund-performance-app > .row > .span4 + .span8 > .pull-right,
+    #fund-performance-app > div:nth-child(3),
+    #fund-performance-app > .t-data-grid,
+    .print-button,
+    .footerContainer,
+    .footerContainer + .container-padded {
+        display: none;
+    }
+    body {
+      font-size: 5pt !important;
+      line-height: 20px;
+    }
+    #header {
+        width: 100%;
+        height: 0;
+        margin-bottom: 0;
+        position: relative;
+    }
+    #header-logo {
+        width: 60px !important;
+        height: 30px !important;
+        display: block;
+        position: absolute;
+        top: -1em;
+        right: 0;
+    }
+    #header-logo img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    div.hsection {
+        font-size: 8pt !important;
+        font-weight: bold;
+        margin-bottom: -2pt;
+    }
+    .highcharts-container,
+    .highcharts-container svg {
+        width: 100% !important;
+        height: auto !important;
+    }
+		.fundPerformanceDiscTxt {
+			border-top: 1px solid #7C878E;
+			padding-top: 0.5em;
+		  line-height: 1.3em;
+		  margin-top: 15px;
+		  font-style: italic;
+		  font-size: 0.7em;
+		}
+}

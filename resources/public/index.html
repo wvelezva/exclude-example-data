@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/ims.css">
+  <link rel="stylesheet" href="/css/ims-internal.css">
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/FundPerformanceComponent.css">
+</head>
+<body>
+<div class="container container-padded containerMod">
+  <div class="span12">
+    <div class="hsection">Performance Chart</div>
+    <div id="fund-performance-app"></div>
+    <div class="fundPerformanceDiscTxt"><p>Financial Services Provider</p></div>
+  </div>
+</div>
+<script src="js/compiled/FundPerformanceComponent.js"></script>
+<script>
+      var spec = {
+        "dev": true,
+        "base-url": "http://localhost:8080/ims",
+        "favorites-pref-name": "PREFERRED_FUNDS",
+        "selected-pref-name": "SELECTED_FUNDS",
+        "fund-list" : {
+          "include-fields" : [
+            {"favorite?" : ""},
+            {"name" : "Fund"},
+            {"code" : "Fund Code"},
+            {"currency-code" : "Currency"},
+            {"manager-name" : "Fund Manager"},
+            {"nav-date" : "NAV Date"},
+            {"nav-value" : "NAV Value"},
+            {"1-month" : "1 Month"},
+            {"3-months" : "3 Months"},
+            {"ytd" : "YDT"},
+            {"1-year" : "1 Year"},
+            {"3-years" : "3 Years"},
+            {"5-years" : "5 Years"},
+            {"10-years" : "10 Years"},
+            {"selected?" : ""}
+          ],
+          "fund-url": "/internal/fundadmin/fund/details/",
+          "funds" : [
+            {"id": "993", "code": "0001", "name": "Fund 1", "manager-id": 440, "manager-name" : "Alexander Forbes", "currency-code" : "USD",
+             "matched-filters": ["DAILY", "MODEL"], "products": [1050, 1051], "isin": "is001", "refnum": "TR0002",
+             "trade-status":"NO_TRADING", "suspended?": false, "type": "Fund",
+             "nav-date": "27-Nov-2019", "nav-value": 101.01, "1-month": "1.8%", "3-months": "4.5%", "ytd": "16.3%", "1-year":"12.0%", "3-years":"7.0%", "5-years": "3.9%", "10-years": "3.1%",
+             color: "#94506D", "selected?": true},
+            {"id": "1189", "code": "0002", "name": "Fund 2", "manager-id": 450, "manager-name" : "Jersey Limited", "currency-code" : "GBP",
+             "matched-filters": ["DCA", "STOCKBROKING", "NAVIGATE"], "products": [1050], "refnum": "TR0003",
+             "trade-status":"OPEN", "suspended?": false, "type": "Fund",
+             "nav-date": "27-Nov-2019", "nav-value": 202.02, "1-month": "3.6%", "3-months": "8.6%", "ytd": "22.2%", "1-year":"15.3%", "3-years":"9.4%", "5-years": "5.2%",
+             color: "#3D522C", "selected?": true},
+            {"id": "1045", "code": "0003", "name": "Fund 3", "manager-id": 450, "manager-name" : "Jersey Limited", "currency-code" : "USD",
+             "matched-filters": ["NON_DAILY", "MODEL"], "products": [1051], "isin" : "is002",
+             "trade-status":"OPEN", "suspended?": true, "type": "Model",
+             "nav-date": "27-Nov-2019", "nav-value": 303.03, "1-month": "1.2%", "3-months": "12.4%", "ytd": "14.4%", "1-year":"11.5%", "3-years":"3.4%", "5-years": "0.4%",
+             color: "#1B2531"}
+          ]
+        },
+        "fund-filters": {
+          "base-url": "http://omidev.kane-group.com:8080/ims",
+          "account-types" : {
+            "1051" : "OMIM Investment Portfolio+",
+            "1050" : "OMIM Investment Portfolio"
+          },
+          "managers" : {
+            "193" : "Internal",
+            "450" : "Jersey Limited",
+            "440" : "Alexander Forbes",
+            "451" : "PSG Fund Management"
+          },
+          "currencies" : {
+            "EUR" : "Euro",
+            "GBP" : "United Kingdom Pounds",
+            "USD" : "United States Dollars"
+          },
+          "search-params" : {
+
+          },
+          "filters": {"NAVIGATE":     {label: "Navigate", "label-list": "Navigate"},
+                      "DAILY":        {label: "Daily", "label-list": "Daily"},
+                      "NON_DAILY":    {label: "Non-daily", "label-list": "ND"}
+          },
+          "loaded": true
+        },
+        "issue-date": 1507076200000,
+        "client": false,
+        "advisor": true,
+        "admin": false,
+        "accounts": [{acctid: 1, acctnum: "2009010101", name: "Luis Londono"},
+                     {acctid: 2, acctnum: "2009020202", name: "Jorge Gomez"}]
+
+   };
+      fund_performance.core.init(spec);
+    </script>
+</body>
+</html>

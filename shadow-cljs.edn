@@ -1,0 +1,16 @@
+{:deps   {:aliases [:dev]}
+ :nrepl  {:port 3333}
+ :builds {:browser {:target           :browser
+                    :modules          {:FundPerformanceComponent {:entries [fund-performance.core]}}
+                    :output-dir       "resources/public/js/compiled"
+                    :asset-path       "/js/compiled"
+                    :compiler-options {:closure-warnings {:global-this :off}
+                                       :closure-defines  {re-frame.trace.trace-enabled?        true
+                                                          day8.re-frame.tracing/trace-enabled? true}}
+                    :devtools         {:repl-init-ns fund-performance.core
+                                       :http-root    "resources/public"
+                                       :http-port    3000
+                                       :preloads     [devtools.preload
+                                                      day8.re-frame-10x.preload]}
+                    :release          {:output-dir "release"
+                                       :js-options {:minimize-require true}}}}}

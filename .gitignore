@@ -1,0 +1,47 @@
+*.class
+# Package Files #
+*.jar
+!ims-igasweb/libs/com/oracle/ojdbc6/11.2.0.4/ojdbc6.jar
+!beluca-security/libs/sunlife/saml/b005/saml-b005.jar
+*.war
+*.ear
+.tomcatplugin
+.DS_Store*
+.project
+.settings
+.classpath
+target
+test-output
+work
+.#webclasspath/beluca-commons-web
+.#webclasspath
+.externalToolBuilders/
+WebContent
+beluca-core/src/main/resources/jdbc.properties
+ims-web/src/main/resources/jdbc.properties
+ims-web/src/main/resources/integration.properties
+ims-web/src/main/resources/commonConfig.xml
+ims-web/src/main/resources/ESAPI.properties
+ims-web/src/main/resources/log4j.properties
+ims-core/src/main/resources/log4j.properties
+ims-integration.log
+ims-web/ims-integration.log.*
+pom.xml.versionsBackup
+META-INF
+hs_err_*.log
+
+### Intellij ###
+.idea/
+*.iml
+
+### React ###
+node_modules/
+compiled/
+
+### Clojure and cljs ###
+package-lock.json
+.shadow-cljs/
+.cpcache/
+package-lock.json
+
+classes/
